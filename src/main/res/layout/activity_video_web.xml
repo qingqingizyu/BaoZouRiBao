@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.team.android_baozou.main.view.VideoWeb">
+        <WebView
+            android:id="@+id/_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/webView_toolbat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E62715"
+            app:navigationIcon="@mipmap/btn_actionbar_back"
+            app:titleTextColor="#fff" />
+        <!--浮动的按钮-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatButton"
+            app:backgroundTint="#D84C29"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:rippleColor="#47A3FF"
+            android:src="@mipmap/btn_nav_favourite_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            app:fabSize="normal"
+            />
+
+
+</android.support.design.widget.CoordinatorLayout>

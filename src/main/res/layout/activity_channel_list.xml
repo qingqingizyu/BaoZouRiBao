@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_channel_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.team.android_baozou.drawer.view.ChannelListActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_channel_toolbat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FB3D4F"
+        app:navigationIcon="@mipmap/btn_actionbar_back"
+        app:title="全网最好笑"
+        app:titleTextColor="#fff" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Channel_a_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.team.android_baozou.main.view.RefreshListView
+            android:id="@+id/Channel_a_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

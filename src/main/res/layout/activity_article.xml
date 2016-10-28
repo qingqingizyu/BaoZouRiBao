@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team.android_baozou.main.view.ArticleActivity">
+
+    <LinearLayout
+        android:id="@+id/article_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/article_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FB3D4F"
+            app:navigationIcon="@mipmap/btn_acctionbar_back"
+            app:title="编辑文章"
+            app:titleTextColor="#fff" />
+
+        <EditText
+            android:id="@+id/edit_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入标题"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <com.team.android_baozou.utils.RichTextEditor
+        android:id="@+id/rich_editor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/article_linear" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/image_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#D4D4D4"
+            android:src="@mipmap/image_local_album" />
+
+        <ImageView
+            android:id="@+id/img_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D4D4D4"
+            android:src="@mipmap/image_take_photo" />
+    </LinearLayout>
+
+</RelativeLayout>
